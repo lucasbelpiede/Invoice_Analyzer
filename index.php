@@ -74,6 +74,15 @@
     }
 ?>
 
+<style>
+    .titleclass{
+        position: relative;
+        bottom: 50px;
+        color: gray;
+        transition: bottom 2.5s, color 5s;
+    }
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,7 +93,7 @@
 </head>
 <body style="background-color: gray;">
     <!--Tela de Upload do Arquivo-->
-    <h1 align="center" style="color: aqua;">Analisador de Nota Fiscal</h1>
+    <h1 class="titleclass" align="center">Analisador de Nota Fiscal</h1>
     <h2 align="center" style="color: aqua;">Selecione Apenas Notas Fiscais no Formato XML</h2>
     
     <div align="center">
@@ -95,3 +104,12 @@
     </div>
 </body>
 </html>
+
+<script>
+    window.onload = ()=>{
+        const templatetitle = document.querySelector('.titleclass');
+
+        templatetitle.style.bottom = '0px';
+        templatetitle.style.color = 'aqua';
+    };
+</script>
