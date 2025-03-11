@@ -74,21 +74,13 @@
     }
 ?>
 
-<style>
-    .titleclass{
-        position: relative;
-        bottom: 50px;
-        color: gray;
-        transition: bottom 2.5s, color 5s;
-    }
-</style>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Analisador de Nota Fiscal</title>
 </head>
 <body style="background-color: gray;">
@@ -105,11 +97,4 @@
 </body>
 </html>
 
-<script>
-    window.onload = ()=>{
-        const templatetitle = document.querySelector('.titleclass');
-
-        templatetitle.style.bottom = '0px';
-        templatetitle.style.color = 'aqua';
-    };
-</script>
+<script src="script.js"></script>
